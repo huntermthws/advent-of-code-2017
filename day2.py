@@ -1,16 +1,13 @@
-
-
-
-#Intializing some variables
+# Intializing some variables
 value = []
 checksum = 0
-#reading in a text file of out input
+# Reading in a text file of out input
 with open("input.txt") as f:
     for line in f:
         value.append(line)
 
-#Part 1 Day 2
-#Calculate the checksm by finding the sum of the differences between the largest and smallest value per row
+# Part 1 Day 2
+# Calculate the checksm by finding the sum of the differences between the largest and smallest value per row
 for row in value:
     temp = []
     row_difference = 0
@@ -20,8 +17,8 @@ for row in value:
     checksum += row_difference
 print(checksum)
 
-#Part 2 Day 2
-#Calculate the checksum by finding the the 2 numbers in the row that divide evenly and summing each
+# Part 2 Day 2
+# Calculate the checksum by finding the the 2 numbers in the row that divide evenly and summing each
 checksum = 0
 for row in value:
     temp = []
